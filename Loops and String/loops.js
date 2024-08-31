@@ -17,3 +17,21 @@ while (i<=5) {
     console.log("Apna College");
     i++;
 }
+// for-of loops
+let str ="Hello World";
+let size =0;
+for (let i of str){
+    console.log(i)
+    size++;
+}
+console.log("size =",size);
+// for in loop 
+
+let student={
+    name: "Supriyo",
+    age :   20,
+    cgpa:   7.5
+};
+for (let i in student){
+    console.log(i,":",student[i]);
+}
