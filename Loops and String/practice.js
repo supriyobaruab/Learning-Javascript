@@ -15,3 +15,4 @@ let name = prompt("Enter your fullname");
 let uu = name.toLowerCase()
 let username = "@" + uu + name.length;
 console.log(username);
+

@@ -9,8 +9,10 @@ console.log(avrg);//66.5
 */
 let items = [250,645,300,900,50];
 
-for(let val in items){
-    offer = val/10%;
-    console.log(offer)
-
+for(let i=0; i<items.length;i++){
+    console.log("Real Price",items[i]);
+    let offers = items[i]*0.1;
+    items[i] -= offers;
+    console.log("Price decreased",offers);
+    console.log("Offer price",items[i]);
 }

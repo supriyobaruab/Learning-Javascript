@@ -12,3 +12,10 @@ for (let i=0; i<students.length; i++){
 for (let j of students){
     console.log(j.toUpperCase());
 }
+
+//Array methods 
+/* 
+*Push():
+*Pop():
+*toString():
+*/
