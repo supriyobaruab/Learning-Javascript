@@ -11,6 +11,10 @@ const arrowSum = (a,b) =>{
 //forEach loop in Arrays // It is a method 
 let goro = [1,2,3,4,5];
 
-arr.forEach(function printval(val)){
+goro.forEach(function printval(val){
     console.log(val);
-}
+    
+})
+goro.forEach((val ,idx,goro)=> {
+    console.log(val,idx,goro);
+})
