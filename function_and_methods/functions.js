@@ -31,3 +31,14 @@ new = newArr.filter((val) => {
 console.log(new);
 */
 //Reduce methods
+let arr = [1,2,3,4]
+let output = arr.reduce((res,curr) => {
+    return res + curr;
+})
+console.log(output);
+//Printing the largest number 
+let arr1 = [1,2,3,4,5,9]
+let out = arr1.reduce((pre,cur) => {
+    return pre > cur ? pre: cur;
+})
+console.log(out)
