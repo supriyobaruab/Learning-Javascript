@@ -18,3 +18,8 @@ goro.forEach(function printval(val){
 goro.forEach((val ,idx,goro)=> {
     console.log(val,idx,goro);
 })
+//array methods 
+/*
+*map methods // same as forEach just create a new array;
+*/
+
