@@ -23,10 +23,11 @@ goro.forEach((val ,idx,goro)=> {
 *map methods // same as forEach just create a new array;
 */
 //filter methods
-let newArr = [1,2,3,4,5,6];
+/*let newArr = [1,2,3,4,5,6];
 
 new = newArr.filter((val) => {
     return val % 2  ===0;
 });
 console.log(new);
-
+*/
+//Reduce methods
