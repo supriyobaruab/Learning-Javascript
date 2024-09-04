@@ -1,0 +1,10 @@
+#box {
+    height: 20px;
+    width:  100px;
+    background-color: skyblue;
+    border: 1px solid orange;
+    text-align: center;
+}
+p{
+    background-color: aquamarine;
+}
