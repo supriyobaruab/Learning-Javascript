@@ -25,17 +25,17 @@ btn1.addEventListener("click", () => {
     curnMode ="dark"
     body.style.backgroundColor = "#161618";
     //console.log("dark");
-    btn1.classList.add("btn2");
+    /*btn1.classList.add("btn2");
     btn1.classList.remove("btn1");
     btn1.innerText = "light"
- }
+ */}
 else{
     curnMode = "light";
     body.style.backgroundColor = "white";
     //console.log("light");
-    btn1.classList.remove("btn2");
+   /* btn1.classList.remove("btn2");
     btn1.classList.add("btn1")
     btn1.innerText = "dark"
-}
+*/}
 console.log(curnMode);
 });

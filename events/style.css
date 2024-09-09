@@ -1,5 +1,5 @@
-#btn2{
-    margin-top: 10px;
+body{
+    display: flex;
 }
 
 .box{
@@ -14,7 +14,7 @@
     background-color: skyblue;
     border-style: none;
     border-radius: 3px;
-    
+    margin-right:5px ;
 }
 .btn1:hover{
     background-color: yellowgreen;
