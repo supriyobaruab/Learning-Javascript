@@ -33,3 +33,19 @@ img:hover{
   #comp-score {
     font-size: 4rem;
   }
+  .msgg{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+  }
+  .msg{
+    display: inline;
+    text-align: center;
+    border: 1px solid;
+    background-color: #191919;
+    color: aliceblue;
+    font-size: xx-large;
+    border-radius: 0.5rem;
+    
+  }
