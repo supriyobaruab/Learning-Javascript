@@ -1,7 +1,7 @@
 let image     = document.querySelectorAll(".image");
 let userScore = document.querySelector("#user-score");
 let compScore = document.querySelector("#comp-score");
-let activities= document.querySelector(".msg");
+let act= document.querySelector(".msg");
 let userCount = 0;
 let compCount = 0;
 const genarate =() =>{
@@ -31,7 +31,7 @@ const playGame = (user) =>{
             compScore.innerText = compCount;
             console.log(compCount);
             console.log(userCount);
-            activities.innterText="You lose, paper covered rock";
+            act.innerText="You lose, paper covered rock";
 
         }
         else if(compchoice =="rock" && user == "scissors"){
@@ -41,7 +41,7 @@ const playGame = (user) =>{
             compScore.innerText = compCount;
             console.log(compCount);
             console.log(userCount);
-            activities.innterText="You lose, rock breaks scissors";
+            act.innerText="You lose, rock breaks scissors";
 
         }
         else if(compchoice =="scissors" && user == "paper"){
@@ -50,7 +50,7 @@ const playGame = (user) =>{
             compScore.innerText = compCount;
             console.log(compCount);
             console.log(userCount);
-            activities.innterText="You lose, scissors cut paper";
+            act.innerText= "You lose, scissors cut paper";
 
         }
         else{
@@ -59,9 +59,7 @@ const playGame = (user) =>{
             userScore.innerText = userCount;
             console.log(compCount);
             console.log(userCount);
-            activities.innterText="You win, you beat computer";
+            act.innerText= "You win, you beat computer";
         }
         })
     });
-
-    activities.innnerText = "goru";
