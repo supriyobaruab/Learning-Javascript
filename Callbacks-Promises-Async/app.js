@@ -22,4 +22,16 @@ async function getWeatherdata() {
     await getData(5);
     console.log("All the data imported")
 }
-getWeatherdata();
+(async function () { // IIFE
+    console.log("Getting data 1......");
+    await getData(1);
+    console.log("Getting data 2......");
+    await getData(2);
+    console.log("Getting data 3......");
+    await getData(3);
+    console.log("Getting data 4......");
+    await getData(4);
+    console.log("Getting data 5......");
+    await getData(5);
+    console.log("All the data imported")
+})();
