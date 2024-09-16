@@ -13,23 +13,26 @@ setTimeout(()=>{
     console.log("hello World");
 },4000);
 */
-/*function getData(dataId, nextdata) {
-  console.log("Loading");
+function getData(dataId) {
+  return new Promise((resolve,reject)=>{
   setTimeout(() => {
     console.log("data = ", dataId);
-    if (nextdata) {
-      nextdata();
-    }
+    resolve("success");
   }, 4000);
+});
 }
-getData(1, () => {
-  console.log("loading data 2");
-  getData(2, () => {
-    console.log("loading data 3");
-    getData(3);
-  });
-});*/
 
+console.log("getting data 1.....");
+getData(1)
+  .then((res)=>{
+    console.log("getting data 2.....");
+    console.log(res);
+    return getData(2);  
+  }).then((res)=>{
+    console.log("getting data 3.....\n",)
+    console.log(res);
+    return getData(3);
+  })
 //promieses
 /*
 let promise = new Promise((resolve, reject) => {
@@ -48,7 +51,7 @@ function getData(dataid, getNextData) {
     }, 5000);
   });
 }*/
-
+/*
 const getPromise = () => {
   return new Promise((resolve, reject) => {
     console.log("I am a promise");
@@ -62,4 +65,4 @@ promise.then(() => {
 
 promise.catch((err) => {
   console.log("rejected");
-});
+});*/

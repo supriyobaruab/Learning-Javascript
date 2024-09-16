@@ -1,36 +1,25 @@
-function asyncFunc() {
-  // api
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      console.log("data1");
-      resolve("Success");
-    }, 4000);
-  });
-}
-function asyncFunc1() {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      console.log("error");
-      reject("error");
-    }, 4000);
-  });
+// Async- Await // simpolize the code better then callback hell and promises chain
+
+function getData(getId){
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+        console.log("Data",getId);
+        resolve("Success");
+        },4000)
+    })
 }
 
-/*let res = asyncFunc(); //for us
-res.then((res) => {
-  console.log("Success");
-  let res1 = asyncFunc1();
-  res1.then((res) => {
-    console.log("Success");
-  });
-});
-console.log(res);
-*/
-console.log("fetching data 1....");
-asyncFunc().then((res) => {
-  console.log(res);
-  console.log("fetching data 2....");
-  asyncFunc1().catch((err) => {
-    console.log("network", err);
-  });
-});
+async function getWeatherdata() {
+    console.log("Getting data 1......");
+    await getData(1);
+    console.log("Getting data 2......");
+    await getData(2);
+    console.log("Getting data 3......");
+    await getData(3);
+    console.log("Getting data 4......");
+    await getData(4);
+    console.log("Getting data 5......");
+    await getData(5);
+    console.log("All the data imported")
+}
+getWeatherdata();
