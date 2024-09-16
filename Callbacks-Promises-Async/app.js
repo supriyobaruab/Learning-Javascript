@@ -1,31 +1,36 @@
-//Timeout Function // Asyncronous 
-/*
-function hello(){
-    console.log("Hello World");
+function asyncFunc() {
+  // api
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("data1");
+      resolve("Success");
+    }, 4000);
+  });
+}
+function asyncFunc1() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("error");
+      reject("error");
+    }, 4000);
+  });
 }
 
-setTimeout(hello,2000);
-
-//using arrow function
-console.log("checking time");
-
-setTimeout(()=>{
-    console.log("hello World");
-},4000);
-*/ 
-function getData(dataId, nextdata){
-    for(let i=0;i<10;i++){
-        console.log(".");
-    }
-    setTimeout(()=>{
-        console.log("Loadead");
-        console.log("data = ",dataId);
-        if(nextdata){
-            nextdata();
-        }
-    },4000);
-}
-getData(1,()=>{
-    console.log("loading data 2");
-    getData(2);
+/*let res = asyncFunc(); //for us
+res.then((res) => {
+  console.log("Success");
+  let res1 = asyncFunc1();
+  res1.then((res) => {
+    console.log("Success");
+  });
+});
+console.log(res);
+*/
+console.log("fetching data 1....");
+asyncFunc().then((res) => {
+  console.log(res);
+  console.log("fetching data 2....");
+  asyncFunc1().catch((err) => {
+    console.log("network", err);
+  });
 });
