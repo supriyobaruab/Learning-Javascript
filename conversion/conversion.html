@@ -4,51 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
       <h2>Currency Converter</h2>
       <form>
-    <div class="amount">
-        <input type="text" value="100" />
-    </div>
+        <div class="amount">
+          <input type="text" value="100" />
+        </div>
 
-    <div class="dropdown">
-        <div class="from">
+        <div class="dropdown">
+          <div class="from">
             <p>FROM</p>
             <div class="select-container">
-            <img src="https://flagsapi.com/US/flat/64.png" />
-              <select>
-                <option>USD</option>
-                <option>BDT</option>
-                <option>INR</option>
-                <option>JPY</option></input>
-               </select>
+              <img src="https://flagsapi.com/US/flat/64.png" />
+              <select name="from"></select>
+            </div>
           </div>
-        </div>
-      
-        <div class="to">
+
+          <div class="to">
             <p>TO</p>
             <div class="select-container">
-            <img src="https://flagsapi.com/BD/flat/64.png" />
-              <select>
-                <option>USD</option>
-                <option selected>BDT</option>
-                <option>INR</option>
-                <option>JPY</option></input>
-               </select>
-              </div>
+              <img src="https://flagsapi.com/BD/flat/64.png" />
+              <select name="to"></select>
+            </div>
           </div>
+        </div>
+        <div class="msg">1USD = 80INR</div>
+        <div class="button">
+          <button>Convert</button>
+        </div>
+      </form>
     </div>
-
-    <div class="button">
-      <button>Convert</button>
-    </div>
-    
-  </form>
-    </div>
-    <script src="app.js"></script>
     <script src="codes.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
